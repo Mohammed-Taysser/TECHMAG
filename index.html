@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TECMAG</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="second try to use bootstrap">
+        <meta name="keywords" content="HTML, CSS, JavaScript,bootstrap,fun,design">
+        <meta name="author" content="Mohammed Taysser">
+
+        <!-- bootstrap -->
+            <!-- for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+                
+        <!-- style sheet-->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <!-- icon tap -->
+        <link rel="icon" href="images/logo.png" type="image/icon">
+        <style></style>
+    </head>
+    <body>
+        
+        <nav class="py-3 bg-light">
+            <div class="container position-relative">
+
+                <div class="d-md-block d-none mb-4">
+                    <div class="top-nav d-flex justify-content-between align-items-center">
+
+                        <div class="subscribe-btn bg-dark overflow-hidden position-relative">
+                            <a href="#" target="_blank" class="text-center text-decoration-none text-white bg-dark d-block" style="line-height: 40px;"> subscribe </a>
+                            <div class="moving-color d-flex">
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+        
+                        <ul class="list-unstyled list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" class="text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" class="text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" class="text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" class="text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-sm-block d-none mb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="brand">
+                                <h1 class="mt-3 font-weight-bold" style="letter-spacing: -5px;"><span class="text-white px-2 pb-2" style="background-color: #333;">TECH</span>MAG</h1>
+                                <p class="m-0 text-muted mt-3 small">Innovation & Technology Magazine</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="img img-fluid" style="background: url('images/extra.jpg') no-repeat center;height: 100px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center d-sm-none">  
+                    <h5 class="font-weight-bold logo"><span class="text-white pt-1 px-2 pb-2" style="background-color: #333;">TECH</span>MAG</h5>
+                    <div class="menu-bar">
+                        <a class="toggle-menu" href="#">
+                            <span class=""></span>
+                            <span class=""></span>
+                            <span class=""></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-menu">
+                    <ul class="mb-0 list-unstyled d-sm-flex justify-content-center">
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">home</a>
+                        </li>
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">teach</a>
+                        </li>
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">innovation</a>
+                        </li>
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">video</a>
+                        </li>
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">world</a>
+                        </li>
+                        <li class="p-2 font-weight-bold ">
+                            <a href="#" class="text-decoration-none position-relative text-dark">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <header>
+            <div class="owl-carousel position-relative" style="height: 797px;">
+                <div class="item h-100">
+                    <div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+                    <div class="home_slider_content text-center">
+                        <div class="home_slider_content_inner text-white" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut ">
+                            <p class="mb-0 small"><a href="#" class="text-decoration-none bg-success p-2 text-white">technology</a></p>
+                            <h2 class="h1 my-2">Building the Future</h2>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</p>
+                            <a class="btn btn-light px-3" href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+                    <div class="home_slider_content text-center">
+                        <div class="home_slider_content_inner text-white" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut ">
+                            <p class="mb-0 small"><a href="#" class="text-decoration-none bg-success p-2 text-white">technology</a></p>
+                            <h2 class="h1 my-2">what next for bitcoin</h2>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</p>
+                            <a class="btn btn-light px-3" href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+                    <div class="home_slider_content text-center">
+                        <div class="home_slider_content_inner text-white" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut ">
+                            <p class="mb-0 small"><a href="#" class="text-decoration-none bg-success p-2 text-white">what about AI</a></p>
+                            <h2 class="h1 my-2">Building the Future</h2>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</p>
+                            <a class="btn btn-light px-3" href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+                    <div class="home_slider_content text-center">
+                        <div class="home_slider_content_inner text-white" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut ">
+                            <p class="mb-0 small"><a href="#" class="text-decoration-none bg-success p-2 text-white">news for google and APK</a></p>
+                            <h2 class="h1 my-2">Building the Future</h2>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</p>
+                            <a class="btn btn-light px-3" href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+                    <div class="home_slider_content text-center">
+                        <div class="home_slider_content_inner text-white" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut ">
+                            <p class="mb-0 small"><a href="#" class="text-decoration-none bg-success p-2 text-white">technology</a></p>
+                            <h2 class="h1 my-2">last man on earth</h2>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</p>
+                            <a class="btn btn-light px-3" href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <div class="content position-relative overflow-hidden">
+                            <div class="img overflow-hidden">
+                                <img src="images/intro_1.jpg" alt="intro-1" class="img-fluid">
+                            </div>
+                            <div class="category position-absolute bg-info px-2 py-1 text-white">date</div>
+                            <div class="product-title position-absolute w-100 text-center py-2 px-3">
+                                <h5 class="my-2 font-weight-bold">football game</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="content position-relative overflow-hidden">
+                            <div class="img overflow-hidden">
+                                <img src="images/intro_2.jpg" alt="intro-1" class="img-fluid">
+                            </div>
+                            <div class="category position-absolute bg-info px-2 py-1 text-white">date</div>
+                            <div class="product-title position-absolute w-100 text-center py-2 px-3">
+                                <h5 class="my-2 font-weight-bold">droid game</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="content position-relative overflow-hidden">
+                            <div class="img overflow-hidden">
+                                <img src="images/intro_3.jpg" alt="intro-1" class="img-fluid">
+                            </div>
+                            <div class="category position-absolute bg-info px-2 py-1 text-white">date</div>
+                            <div class="product-title position-absolute w-100 text-center py-2 px-3">
+                                <h5 class="my-2 font-weight-bold">phone</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feather-posts my-5">
+            <div class="container">
+                <div class="feather-head d-flex justify-content-between align-items-center">
+                    <div class="title">
+                        <h3 class="mb-1">feather posts </h3>
+                        <p class="">handpicked articles</p>
+                    </div>
+                    <div class="w-50"><div class="p-2 " style="background-color: #f2f2f2;"></div></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 my-3">
+                        <div class="nice-shadow p-3 post-big">
+                            <img src="images/post_1.jpg" alt="" class="img-fluid">
+                            <div class="my-3"><span class="bg-info py-2 px-3 text-light ">tech</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="nice-shadow my-3 p-3 post-small">
+                            <img src="images/post_2.jpg" alt="" class="img-fluid">
+                            <div class="my-3"><span class="bg-primary py-2 px-3 text-light ">world</span></div>
+                            <a href="#" class="text-dark  text-decoration-none">
+                                <h4>The new Apple </h4>
+                            </a>
+                            <div class="d-flex my-2 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="nice-shadow my-3 p-3 post-small">
+                            <img src="images/post_3.jpg" alt="" class="img-fluid">
+                            <div class="my-3"><span class="bg-primary py-2 px-3 text-light ">world</span></div>
+                            <a href="#" class="text-dark  text-decoration-none">
+                                <h4>The new Apple </h4>
+                            </a>
+                            <div class="d-flex my-2 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tech-posts my-5">
+            <div class="container">
+                <div class="feather-head d-flex justify-content-between align-items-center">
+                    <div class="title">
+                        <h3 class="mb-1">technology posts </h3>
+                        <p class="">handpicked articles</p>
+                    </div>
+                    <div class="w-75"><div class="p-2 " style="background-color: #f2f2f2;"></div></div>
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-info py-2 px-3 text-light ">tech</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-info py-2 px-3 text-light ">tech</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-primary py-2 px-3 text-light ">world</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-danger py-2 px-3 text-light ">any</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_5.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-info py-2 px-3 text-light ">tech</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple release ceremony</h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="post my-3 nice-shadow p-3 rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-5 my-3 pr-md-3">
+                            <img src="images/post_h_6.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 my-3">
+                            <div class="my-3"><span class="bg-success py-2 px-3 text-light ">good</span></div>
+                            <a href="#" class="text-dark mt-3 text-decoration-none">
+                                <h3>The new Apple </h3>
+                            </a>
+                            <div class="d-flex my-3 justify-content-between">
+                               <div class="">
+                                    <img src="images/author_1.jpg" alt="" width="20px" class="rounded-circle">
+                                    <a href="#" class="text-dark mr-2">user name</a>
+                                    | <span class="ml-2">5 july 2010</span>
+                               </div>
+                               <div class="commemt_num">5 comments</div>
+                            </div>
+                            <p class="text-muted mt-3">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. </p>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tags my-5">
+            <div class="container">
+                <h3 class="my-3">popular tags</h3>
+                <div class="d-flex">
+                    <span class="p-2 mr-3 badge badge-info">design</span>
+                    <span class="p-2 mr-3 badge badge-warning">tech</span>
+                    <span class="p-2 mr-3 badge badge-primary">web</span>
+                    <span class="p-2 mr-3 badge badge-success">music</span>
+                    <span class="p-2 mr-3 badge badge-secondary">video</span>
+                    <span class="p-2 mr-3 badge badge-dark">rap</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mb-5  text-white" >
+            <div class="social-media py-3 text-white">
+                <div class="container">
+                    <ul class="list-unstyled text-center list-inline mb-0">
+                        <li class="list-inline-item mx-3">
+                            <a href="#" target="_blank" class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-white bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#" target="_blank" class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-white bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#" target="_blank" class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-white bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#" target="_blank" class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-white bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="last-head" style="background: url('images/home_slider.jpg') no-repeat fixed;background-size: cover; height: 300px;">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <div class="brand mt-5">
+                            <h1 class="font-weight-bold" style="letter-spacing: -5px;"><span class="text-dark px-2 pb-2" style="background-color: #fff;">TECH</span>MAG</h1>
+                            <p class="m-0 text-white-50 mt-3 small">Innovation & Technology Magazine</p>
+                        </div>
+                    </div>
+                    <div class="links mt-5 mb-4">
+                        <ul class="mb-0 list-unstyled d-sm-flex justify-content-center">
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">home</a>
+                            </li>
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">teach</a>
+                            </li>
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">innovation</a>
+                            </li>
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">video</a>
+                            </li>
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">world</a>
+                            </li>
+                            <li class="p-2 font-weight-bold ">
+                                <a href="#" class="text-decoration-none position-relative text-white">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright text-center">
+                        Copyright &copy;2021-<script>document.write(new Date().getFullYear());</script> All rights reserved </div>
+                </div>
+            </div>
+        </footer>
+
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/bs-custom-file-input.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/script.js" ></script>
+    </body>
+</html>
